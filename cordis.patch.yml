@@ -1,0 +1,6 @@
+# @sqnb/dsh-gpt-schema-compat bundle patch.
+# Mounts the stream-level compatibility plugin.
+
+- insert:
+    - id: gpt-schema-compat
+      name: '@sqnb/dsh-gpt-schema-compat'

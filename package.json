@@ -1,0 +1,34 @@
+{
+  "name": "@sqnb/dsh-gpt-schema-compat",
+  "version": "0.3.3",
+  "description": "Normalize GPT sandbox retries while preserving DSH approval prompts.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "scripts": {
+    "test": "node --test gpt-schema-compat.test.mjs"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UABULAJIQL/dsh-gpt-schema-compat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/UABULAJIQL/dsh-gpt-schema-compat/issues"
+  },
+  "homepage": "https://github.com/UABULAJIQL/dsh-gpt-schema-compat#readme",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
