@@ -2,17 +2,21 @@
 
 中文 | [English](README.en.md)
 
-为 GPT 的 DSH 文件沙箱重试提供兼容处理，同时保留 DSH 原有的审批弹窗。
+> **状态：已停止维护**
+>
+> 本插件最初仅用于解决 Windows 环境下使用标准 GPT 模型时遇到的 DSH 文件沙箱兼容问题。实际验证表明，切换到 PTC 模型后即可正常工作，因此本插件现在没有实际用途。
+>
+> **不建议安装或继续使用本插件。项目已停止维护，不再接受问题修复和功能更新。**
 
 ## 安装
 
-```powershell
-dsh plugin --profile web add https://codeload.github.com/UABULAJIQL/dsh-gpt-schema-compat/tar.gz/refs/heads/main
-```
+本插件已无实际用途，不建议安装。遇到 Windows 下标准 GPT 模型相关问题时，请优先切换到 PTC 模型，而不是安装此插件。
 
-安装后需要停止并重新启动 `dsh web`。仅刷新浏览器不会加载新的 bundle。
+如果已经安装本插件，建议将其移除。
 
-## 行为
+## 历史行为
+
+以下内容仅记录本插件的历史用途；本插件目前已停止维护。
 
 - 仅影响 `gpt-*` 和 `chatgpt-*` 模型路由。
 - 仅为完全匹配的 `write`、`edit` 或 `pwsh` 沙箱拒绝重试提供兼容处理。

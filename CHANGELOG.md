@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here.
 
+## Unreleased
+
+- Mark the plugin as deprecated and unmaintained.
+- Document that it was created for a Windows-only issue with the standard GPT model, while switching to the PTC model resolves the issue and makes this plugin unnecessary.
+
 ## 0.3.3 - 2026-08-14
 
 - Normalize GPT `pwsh` escalation arguments again: discard speculative requests before execution.

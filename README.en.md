@@ -2,17 +2,21 @@
 
 [中文](README.md) | English
 
-DSH bundle for GPT filesystem sandbox retries that preserves normal DSH approval prompts.
+> **Status: Deprecated and unmaintained**
+>
+> This plugin was originally created only to address a DSH filesystem-sandbox issue observed with the standard GPT model on Windows. In practice, switching to the PTC model resolves the issue, so this plugin has no practical use.
+>
+> **Do not install or continue using this plugin. It is no longer maintained and will receive no bug fixes or feature updates.**
 
-## Install
+## Installation
 
-```powershell
-dsh plugin --profile web add https://codeload.github.com/UABULAJIQL/dsh-gpt-schema-compat/tar.gz/refs/heads/main
-```
+This plugin has no practical use and is not recommended for installation. If you encounter the standard GPT model issue on Windows, switch to the PTC model instead of installing this plugin.
 
-Stop and start `dsh web` after installation. A browser refresh does not load a new bundle.
+If the plugin is already installed, remove it.
 
-## Behavior
+## Historical behavior
+
+The following only documents the plugin's historical purpose; the plugin is no longer maintained.
 
 - Only changes `gpt-*` and `chatgpt-*` model routes.
 - Handles exact sandbox-denial retries for `write`, `edit`, or `pwsh` only.
